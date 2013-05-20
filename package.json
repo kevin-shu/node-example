@@ -1,0 +1,23 @@
+{
+  "name": "cvs",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "axon": "~0.5.1",
+    "mongojs": "~0.7.4",
+    "elasticsearchclient": "~0.4.0",
+    "async": "~0.2.6",
+    "redis": "~0.8.2",
+    "hiredis": "~0.1.15",
+    "request": "~2.16.6",
+    "lodash": "~1.1.1",
+    "csv": "~0.2.9"
+  }
+}

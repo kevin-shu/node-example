@@ -4,7 +4,7 @@ var dataSource = {
 	port: '9200'
 };
 var target = {
-	host: '192.168.200.130',
+	host: '54.249.13.145',
 	port: '9200'
 };
 var esSource = new ElasticSearchClient(dataSource);
@@ -34,7 +34,7 @@ esSource.search('eastbnb', 'region', qryObj)
 function backup(hits) {
 	for (var _i in hits) {
 		var src = hits[_i]._source;
-		esBackup.index('eastbnb', 'region', src, hits[_i]._id)
+		esBackup.index('eastbnb', 'regionT', src, hits[_i]._id)
 		.on('data', function(_data) {
 			console.log(counter);
 			counter += 1;
